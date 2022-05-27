@@ -1,25 +1,31 @@
 import logo from './logo.svg';
 import './App.css';
+import Search  from './Search';
 
 function App() {
+
+  let data=[{
+    name:'monika',
+    id:1,
+    email:'monika28may@gmail.com'
+  },
+  {
+    name:'shivani',
+    id:2,
+    email:'shivani@gmail.com'
+  },
+  {
+    name:'reeema',
+    id:2,
+    email:'shivani@gmail.com'
+  },
+
+
+  ]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  <Search mylist={data}/>
   );
 }
 
 export default App;
+
